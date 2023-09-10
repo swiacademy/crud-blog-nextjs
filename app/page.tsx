@@ -1,5 +1,6 @@
 "use client";
 import Button from "@/components/Button";
+import Table from "@/components/Table";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 
@@ -23,7 +24,9 @@ export default function Home() {
           <Button label={label} url={url} />
         </div>
 
-        <div className="flex justify-center">Datatable</div>
+        <div className="flex justify-center mt-8">
+          <Table />
+        </div>
       </section>
     </>
   );

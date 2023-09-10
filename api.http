@@ -20,12 +20,12 @@ Content-Type: application/json
 Accept: application/json
 
 ### Update Post Collection API
-PATCH http://localhost:3000/api/blog/64f6ee17ebb0345560054441/update
+PATCH http://localhost:3000/api/blog/64fd6fab77f2c62060912ae7/update
 Content-Type: application/json
 Accept: application/json
 
 {
-    "title":"Update dari REST API",
+    "title":"Update Test",
     "content":"Ini adalah update menggunakan REST API"
 }
 

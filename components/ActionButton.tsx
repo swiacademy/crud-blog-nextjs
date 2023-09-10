@@ -9,6 +9,7 @@ type ActionButtonProps = {
   color: string;
   colorHover: string;
   type: string;
+  isLoading: any;
 };
 
 const ActionButton = ({
@@ -16,6 +17,7 @@ const ActionButton = ({
   color,
   colorHover,
   type,
+  isLoading,
 }: ActionButtonProps) => {
   const router = useRouter();
 
@@ -30,7 +32,10 @@ const ActionButton = ({
   );
   return (
     <button
-      className={`${color} text-white px-2 py-1 rounded-lg cursor-pointer ${colorHover}`}
+      className={`${color} text-white px-2 py-1 rounded-lg cursor-pointer ${
+        isLoading ? "hover:bg-gray-500" : colorHover
+      } ${isLoading ? "bg-gray-400" : color}`}
+      disabled={isLoading}
       onClick={(e) => {
         handleActionButton(e);
       }}
