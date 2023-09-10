@@ -1,0 +1,35 @@
+### GET Post Collection API
+
+GET http://localhost:3000/api/blog
+Content-Type: application/json
+
+
+### POST to Post Collection API
+POST http://localhost:3000/api/blog
+Content-Type: application/json
+Accept: application/json
+
+{
+    "title":"Menggali Potensi Diri: Membangun Kepercayaan Diri yang Kuat",
+    "content":"Kepercayaan diri adalah kunci untuk mencapai kesuksesan dalam kehidupan pribadi dan profesional. Dalam blog ini, kami akan membahas tentang mengapa kepercayaan diri penting, tanda-tanda kurangnya kepercayaan diri, dan langkah-langkah praktis untuk membangun kepercayaan diri yang kuat. Jangan biarkan diri Anda terhalang oleh keraguan diri lagi!"
+}
+ Q
+### Edit Post Colleection API
+GET http://localhost:3000/api/blog/64f6ee17ebb0345560054441/edit
+Content-Type: application/json
+Accept: application/json
+
+### Update Post Collection API
+PATCH http://localhost:3000/api/blog/64f6ee17ebb0345560054441/update
+Content-Type: application/json
+Accept: application/json
+
+{
+    "title":"Update dari REST API",
+    "content":"Ini adalah update menggunakan REST API"
+}
+
+### Delete Post Collection API
+DELETE  http://localhost:3000/api/blog/64f6ee17ebb0345560054441/delete
+Content-Type: application/json
+Accept: application/json
